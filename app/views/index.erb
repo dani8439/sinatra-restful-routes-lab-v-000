@@ -1,5 +1,16 @@
 <h1>Recipes: </h1>
 
 <% @recipes.each do |recipe| %>
+<div class="post">
+  <p>Recipe: <%= recipe.name %></p><br>
+  <p>
+
 <% end %>
   
+<h1>Posts: </h1>
+<% @posts.each do |post| %>
+<div class="post">
+  <p>Name: <%= post.name %></p><br>
+  <p>Content: <%= post.content %></p><br>
+</div><br>
+<% end %>
